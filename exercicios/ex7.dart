@@ -1,17 +1,16 @@
 import 'dart:io';
 
 void main() {
-  // Solicita o valor médio dos três modelos de carro
-  print('Digite o valor médio do primeiro modelo de carro:');
+
+  print('o valor médio do primeiro modelo de carro:');
   double valor1 = double.parse(stdin.readLineSync()!);
 
-  print('Digite o valor médio do segundo modelo de carro:');
+  print('o valor médio do segundo modelo de carro:');
   double valor2 = double.parse(stdin.readLineSync()!);
 
-  print('Digite o valor médio do terceiro modelo de carro:');
+  print('o valor médio do terceiro modelo de carro:');
   double valor3 = double.parse(stdin.readLineSync()!);
 
-  // Encontra o valor mais caro e o mais barato
   double maisCaro = valor1;
   double maisBarato = valor1;
 
@@ -29,7 +28,6 @@ void main() {
     maisBarato = valor3;
   }
 
-  // Exibe os resultados
   print('O modelo mais caro custa: R\$ ${maisCaro.toStringAsFixed(2)}');
   print('O modelo mais barato custa: R\$ ${maisBarato.toStringAsFixed(2)}');
 }
